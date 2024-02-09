@@ -10,88 +10,81 @@
     "productivity"
   ],
   "repository": "https://github.com/rajeshrakis/TamilBot",
-  "website": "https://github.com/ivetri/TamilBot",
+  "website": "https://github.com/rakeshrakis/TamilBot",
   "success_url": "#TODO",
   "env": {
-    "ENV": {
-      "description": "Setting this to ANYTHING will enable heroku.",
-      "value": "ANYTHING"
-    },
-    "TEMP_DOWNLOAD_DIRECTORY": {
-      "description": "Where downloaded files will go.",
-      "value": "./userbot/DOWNLOADS/",
-      "required": false
+    "ALIVE_NAME": {
+      "description": "உங்கள் Telegram Account பெயரை பதிவிடவும்",
+      "value": ""
     },
     "APP_ID": {
-      "description": "https://my.telegram.org இருந்து பெறுங்கள்.",
+      "description": "https://my.telegram.org இருந்து பெறுங்கள்",
       "value": ""
     },
     "API_HASH": {
-      "description": "https://my.telegram.org இருந்து பெறுங்கள்.",
+      "description": "https://my.telegram.org இருந்து பெறுங்கள்",
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "generate_string_session.py Or https://repl.it/@Ivetri/TamilBot பயன்படுத்தி உருவாக்கவும்.",
+      "description": "generate_string_session.py Or https://replit.com/@Ivetri/TamilBots#main.py பயன்படுத்தி உருவாக்கவும்.",
       "value": ""
     },
-    "GITHUB_ACCESS_TOKEN": {
-      "description": "Your Github Access Token for gitcommit plugin.Google 'Github access token' to find.",
-      "value": "",
+    "TG_BOT_USERNAME": {
+      "description": "inline buttons உருவாக்க தேவை. [BotFather](http://telegram.dog/BotFather) இல் ஒரு போட் செய்யுங்கள். உங்கள் போட்டின் Token-ஐ பெறுங்கள்",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": "inline buttons உருவாக்க தேவை.[BotFather](http://telegram.dog/BotFather) இல் ஒரு போட் செய்யுங்கள்.உங்கள் போட்டின் UserName-ஐ பெறுங்கள்.",
+      "value": ""
+    },
+    "COMMAND_HAND_LER": {
+      "description": "Set this one with only one the symbol to use it before your command to run like . , ' `",
+      "value": ".",
       "required": false
     },
-    "GIT_REPO_NAME": {
-      "description": "Your repo name Example: ivetri/TamilBot, but GITHUB_ACCESS_TOKEN must be setup first.",
-      "value": "",
-      "required": false
-    },
-    "LYDIA_API_KEY": {
-      "description": "Needed for Lydia AI. Follow https://telegra.ph/Lydia-09-05 to get your API.",
-      "value": "",
-      "required": false
-    },
-    "SUDO_USERS": {
-      "description": "Makes your acc and bot stable",
-      "value": "1492186775 1169076058",
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING",
       "required": false
     },
     "HEROKU_API_KEY": {
-      "description": "Go to https://dashboard.heroku.com/account, கீழே சென்று அழுத்தவும் Reveal API.புதுப்பிக்க வேலை செய்ய தேவை.",
+      "description": "Go to https://dashboard.heroku.com/account, கீழே சென்று அழுத்தவும் Reveal API.Update Plugin வேலை செய்ய தேவை",
       "value": "",
       "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "உங்கள் heroku app-ன் பெயர்..",
+      "description": "உங்கள் Heroku App பெயர் ",
       "value": "",
       "required": false
     },
-    "TG_BOT_TOKEN_BF_HER": {
-      "description": "inline buttons உருவாக்க தேவை. [BotFather](http://telegram.dog/BotFather) இல் ஒரு போட் செய்யுங்கள். உங்கள் போட்டின் டோக்கனைப் பெறுங்கள்.",
+    "PRIVATE_GROUP_ID": {
+      "description": "Pm Permit வேலை செய்ய தேவை. Private Group I'd -ஐ இடவும். id must start with -100. Ask @TamilSupport",
       "value": "",
       "required": true
     },
-    "CHROME_BIN": {
-      "description": "For Carbon.py. அப்படியே விடுங்கள். ",
-      "value": "/app/.apt/usr/bin/google-chrome",
+    "PRIVATE_GROUP_BOT_ID": {
+      "description": "Pm Permit வேலை செய்ய தேவை. Private Group I'd -ஐ இடவும்.  id must start with -100. Ask @TamilSupport.",
+      "value": "",
+       "required": true
+    },
+    "CUSTOM_PMPERMIT": {
+      "description": "custom pm text.note-words not exceed to 64 character",
+      "value": "நான் உங்களைப் போலல்லாமல் ஒரு Busy-யான மனிதர்!😁😅",
       "required": false
     },
-    "CHROME_DRIVER": {
-      "description": "For Carbon.py. அப்படியே விடுங்கள். ",
-      "value": "/app/.chromedriver/bin/chromedriver",
-      "required": false
-    },
-    "TG_BOT_USER_NAME_BF_HER": {
-      "description": "inline buttons உருவாக்க தேவை.[BotFather](http://telegram.dog/BotFather) இல் ஒரு போட் செய்யுங்கள்.உங்கள் போட்டின் பயனர்பெயரைப் பெறுங்கள்",
-      "value": "",
-      "required": true
-    },
-    "DOWNLOAD_PFP_URL_CLOCK": {
-      "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
-      "value": "",
+    "PMPERMIT_PIC": {
+      "description": "custom pm picture",
+      "value": "https://telegra.ph/file/cb72a96f40d9026e3341d.jpg",
       "required": false
     },
     "TZ": {
-      "description": "Required for Correct Time on autopic",
+      "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
       "value": "Asia/Kolkata",
+      "required": false
+    },
+    "UPSTREAM_REPO": {
+      "description": "உங்களுக்கு புதிய Bot தேவைப்பட்டால், TamilBotNew எனவும்,  பழைய Bot தேவைப்பட்டால், TamilBotOld எனவும் பதிவிடவும்.",
+      "value": "",
       "required": false
     }
   },
@@ -104,13 +97,15 @@
   "buildpacks": [{
     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
   },{
-    "url":"https://github.com/amivin/aria2-heroku.git"
-  },{
     "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
   },{
     "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
   },{
     "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
   },{
     "url": "heroku/python"
   }]
